@@ -17,6 +17,7 @@
 		49075E922AA06E9A0062FB30 /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49075E8F2AA06E9A0062FB30 /* sound-ding.mp3 */; };
 		49075E932AA06E9A0062FB30 /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49075E902AA06E9A0062FB30 /* sound-rise.mp3 */; };
 		49075E9C2AA0C0BB0062FB30 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49075E9B2AA0C0BB0062FB30 /* Constant.swift */; };
+		49075E9E2AA0CAF90062FB30 /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49075E9D2AA0CAF90062FB30 /* HideKeyboardExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		49075E902AA06E9A0062FB30 /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
 		49075E9A2AA06F9B0062FB30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		49075E9B2AA0C0BB0062FB30 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		49075E9D2AA0CAF90062FB30 /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,15 +66,15 @@
 		49075E7A2AA06D3D0062FB30 /* SwiftUI-DevoteApp-Samole */ = {
 			isa = PBXGroup;
 			children = (
-				49075E9A2AA06F9B0062FB30 /* Info.plist */,
+				49075E952AA06EC60062FB30 /* View */,
+				49075E992AA06F510062FB30 /* Model */,
 				49075E982AA06EF30062FB30 /* Style */,
+				49075E9A2AA06F9B0062FB30 /* Info.plist */,
 				49075E972AA06EE60062FB30 /* Utility */,
 				49075E962AA06ED70062FB30 /* Extension */,
 				49075E942AA06EB00062FB30 /* Sound */,
 				49075E7B2AA06D3D0062FB30 /* SwiftUI_DevoteApp_SamoleApp.swift */,
-				49075E952AA06EC60062FB30 /* View */,
 				49075E7F2AA06D3F0062FB30 /* Assets.xcassets */,
-				49075E992AA06F510062FB30 /* Model */,
 				49075E812AA06D3F0062FB30 /* Preview Content */,
 			);
 			path = "SwiftUI-DevoteApp-Samole";
@@ -107,6 +109,7 @@
 		49075E962AA06ED70062FB30 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				49075E9D2AA0CAF90062FB30 /* HideKeyboardExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			files = (
 				49075E852AA06D3F0062FB30 /* Persistence.swift in Sources */,
 				49075E7E2AA06D3D0062FB30 /* ContentView.swift in Sources */,
+				49075E9E2AA0CAF90062FB30 /* HideKeyboardExtension.swift in Sources */,
 				49075E9C2AA0C0BB0062FB30 /* Constant.swift in Sources */,
 				49075E7C2AA06D3D0062FB30 /* SwiftUI_DevoteApp_SamoleApp.swift in Sources */,
 				49075E882AA06D3F0062FB30 /* SwiftUI_DevoteApp_Samole.xcdatamodeld in Sources */,
