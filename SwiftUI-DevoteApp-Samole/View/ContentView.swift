@@ -26,61 +26,68 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-            VStack {
-                VStack(spacing: 16) {
-                    TextField("New Task", text: $task)
-                        .padding()
-                        .background (
-                            Color(UIColor.systemGray6)
-                        )
-                        .cornerRadius(10)
-                    Button(action: {
-                        addItem()
-                        
-                    }) {
-                        Spacer()
-                        Text("SAVE")
-                        Spacer()
-                    }
-                    .disabled(isButtonDisabled)
-                    .padding()
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .background(isButtonDisabled ? Color.gray : Color.pink)
-                    .cornerRadius(10)
-                    
-                } //: VStack
-                .padding()
-                
-                List {
-                    ForEach(items) { item in
-                        VStack(alignment: .leading) {
-                            Text(item.task ?? "")
-                                .font(.headline)
-                                .fontWeight(.bold)
+            ZStack {
+                VStack {
+                    VStack(spacing: 16) {
+                        TextField("New Task", text: $task)
+                            .padding()
+                            .background (
+                                Color(UIColor.systemGray6)
+                            )
+                            .cornerRadius(10)
+                        Button(action: {
+                            addItem()
                             
-                            Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                                .font(.footnote)
-                                .foregroundColor(.gray)
+                        }) {
+                            Spacer()
+                            Text("SAVE")
+                            Spacer()
                         }
-                    }
-                    .onDelete(perform: deleteItems)
-                } //: List
+                        .disabled(isButtonDisabled)
+                        .padding()
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .background(isButtonDisabled ? Color.gray : Color.pink)
+                        .cornerRadius(10)
+                        
+                    } //: VStack
+                    .padding()
+                    
+                    List {
+                        ForEach(items) { item in
+                            VStack(alignment: .leading) {
+                                Text(item.task ?? "")
+                                    .font(.headline)
+                                    .fontWeight(.bold)
+                                
+                                Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+                                    .font(.footnote)
+                                    .foregroundColor(.gray)
+                            }
+                        }
+                        .onDelete(perform: deleteItems)
+                    } //: List
+                    .scrollContentBackground(.hidden)
+                    .listStyle(InsetGroupedListStyle())
+                    .shadow(color: .black.opacity(0.3), radius: 12)
+                    .padding(.vertical, 0)
+                    .frame(maxWidth: 640)
+                } //: VStack
                 
-            } //: VStack
+            } //: ZStack
+            
             .navigationBarTitle("Daily Tasks", displayMode: .large)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     EditButton()
                 }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            } //: toolbar
-            Text("Select an item")
-        } //: NavigationView
+                
+            }//: toolbar
+            .background(BackgroundImageView())
+            .background(backGroundGradient.ignoresSafeArea(.all))
+             
+        } //: NavigationStack
+         
     }
 
     private func addItem() {
@@ -99,6 +106,9 @@ struct ContentView: View {
                 let nsError = error as NSError
                 fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
             }
+            
+            task = ""
+            hideKeyboard()
         }
     }
 
