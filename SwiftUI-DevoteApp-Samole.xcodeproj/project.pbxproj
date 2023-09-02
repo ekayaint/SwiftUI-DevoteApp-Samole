@@ -19,6 +19,8 @@
 		49075E9C2AA0C0BB0062FB30 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49075E9B2AA0C0BB0062FB30 /* Constant.swift */; };
 		49075E9E2AA0CAF90062FB30 /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49075E9D2AA0CAF90062FB30 /* HideKeyboardExtension.swift */; };
 		49075EBA2AA212E90062FB30 /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49075EB92AA212E90062FB30 /* BackgroundImageView.swift */; };
+		49075ED62AA3637F0062FB30 /* NewTaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49075ED52AA3637F0062FB30 /* NewTaskItemView.swift */; };
+		49075ED82AA36FB20062FB30 /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49075ED72AA36FB20062FB30 /* BlankView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		49075E9B2AA0C0BB0062FB30 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		49075E9D2AA0CAF90062FB30 /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
 		49075EB92AA212E90062FB30 /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
+		49075ED52AA3637F0062FB30 /* NewTaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskItemView.swift; sourceTree = "<group>"; };
+		49075ED72AA36FB20062FB30 /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 			children = (
 				49075E7D2AA06D3D0062FB30 /* ContentView.swift */,
 				49075EB92AA212E90062FB30 /* BackgroundImageView.swift */,
+				49075ED52AA3637F0062FB30 /* NewTaskItemView.swift */,
+				49075ED72AA36FB20062FB30 /* BlankView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -218,9 +224,11 @@
 				49075EBA2AA212E90062FB30 /* BackgroundImageView.swift in Sources */,
 				49075E7E2AA06D3D0062FB30 /* ContentView.swift in Sources */,
 				49075E9E2AA0CAF90062FB30 /* HideKeyboardExtension.swift in Sources */,
+				49075ED82AA36FB20062FB30 /* BlankView.swift in Sources */,
 				49075E9C2AA0C0BB0062FB30 /* Constant.swift in Sources */,
 				49075E7C2AA06D3D0062FB30 /* SwiftUI_DevoteApp_SamoleApp.swift in Sources */,
 				49075E882AA06D3F0062FB30 /* SwiftUI_DevoteApp_Samole.xcdatamodeld in Sources */,
+				49075ED62AA3637F0062FB30 /* NewTaskItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
