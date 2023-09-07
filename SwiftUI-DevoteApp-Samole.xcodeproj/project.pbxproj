@@ -21,6 +21,9 @@
 		49075EBA2AA212E90062FB30 /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49075EB92AA212E90062FB30 /* BackgroundImageView.swift */; };
 		49075ED62AA3637F0062FB30 /* NewTaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49075ED52AA3637F0062FB30 /* NewTaskItemView.swift */; };
 		49075ED82AA36FB20062FB30 /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49075ED72AA36FB20062FB30 /* BlankView.swift */; };
+		49075EDA2AA74B4A0062FB30 /* ListRowItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49075ED92AA74B4A0062FB30 /* ListRowItemView.swift */; };
+		49075EDC2AA798610062FB30 /* CheckboxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49075EDB2AA798610062FB30 /* CheckboxStyle.swift */; };
+		49075EF82AAA3D320062FB30 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49075EF72AAA3D320062FB30 /* SoundPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		49075EB92AA212E90062FB30 /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
 		49075ED52AA3637F0062FB30 /* NewTaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskItemView.swift; sourceTree = "<group>"; };
 		49075ED72AA36FB20062FB30 /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
+		49075ED92AA74B4A0062FB30 /* ListRowItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowItemView.swift; sourceTree = "<group>"; };
+		49075EDB2AA798610062FB30 /* CheckboxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxStyle.swift; sourceTree = "<group>"; };
+		49075EF72AAA3D320062FB30 /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,7 @@
 				49075EB92AA212E90062FB30 /* BackgroundImageView.swift */,
 				49075ED52AA3637F0062FB30 /* NewTaskItemView.swift */,
 				49075ED72AA36FB20062FB30 /* BlankView.swift */,
+				49075ED92AA74B4A0062FB30 /* ListRowItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -127,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				49075E9B2AA0C0BB0062FB30 /* Constant.swift */,
+				49075EF72AAA3D320062FB30 /* SoundPlayer.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -134,6 +142,7 @@
 		49075E982AA06EF30062FB30 /* Style */ = {
 			isa = PBXGroup;
 			children = (
+				49075EDB2AA798610062FB30 /* CheckboxStyle.swift */,
 			);
 			path = Style;
 			sourceTree = "<group>";
@@ -226,8 +235,11 @@
 				49075E9E2AA0CAF90062FB30 /* HideKeyboardExtension.swift in Sources */,
 				49075ED82AA36FB20062FB30 /* BlankView.swift in Sources */,
 				49075E9C2AA0C0BB0062FB30 /* Constant.swift in Sources */,
+				49075EDA2AA74B4A0062FB30 /* ListRowItemView.swift in Sources */,
 				49075E7C2AA06D3D0062FB30 /* SwiftUI_DevoteApp_SamoleApp.swift in Sources */,
 				49075E882AA06D3F0062FB30 /* SwiftUI_DevoteApp_Samole.xcdatamodeld in Sources */,
+				49075EDC2AA798610062FB30 /* CheckboxStyle.swift in Sources */,
+				49075EF82AAA3D320062FB30 /* SoundPlayer.swift in Sources */,
 				49075ED62AA3637F0062FB30 /* NewTaskItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
